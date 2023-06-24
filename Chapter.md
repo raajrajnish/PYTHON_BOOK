@@ -1,4 +1,4 @@
-# Topics of this book
+# Contents
 Core Python topics refer to the fundamental concepts and features of the Python programming language. 
 These topics form the building blocks of Python programming and provide a strong foundation for developing applications.
 
