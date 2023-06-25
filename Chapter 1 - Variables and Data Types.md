@@ -91,3 +91,37 @@ Integers, in Python, are a data type used to represent whole numbers without any
     ```
 
 Integers are commonly used for counting, indexing, and performing mathematical operations in Python. They are a fundamental data type that allows you to represent and work with whole numbers efficiently.
+
+**Section 2 Floats**
+
+Floats, short for floating-point numbers, are a data type in Python used to represent decimal numbers. They are used when more precision or fractional values are required. Here's an explanation of floats with some examples in Python:
+
+- **Declaring Floats**: Float values can be assigned to variables using the assignment operator (=).
+    ```
+    x = 3.14
+    y = -2.5
+    z = 0.0
+    ```
+- **Arithmetic Operations**: Floats support the same arithmetic operations as integers, including addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).
+    ```
+    a = 3.14 + 1.5    # Addition: a becomes 4.64
+    b = 3.14 - 1.5    # Subtraction: b becomes 1.64
+    c = 3.14 * 2.0    # Multiplication: c becomes 6.28
+    d = 3.14 / 2.0    # Division: d becomes 1.57
+    e = 3.14 % 2.0    # Modulus: e becomes 1.14 (remainder of division)
+    ```
+- **Type Conversion**: Floats can be converted to integers using the int() function. This conversion truncates the decimal part and returns the whole number part.
+    ```
+    x = int(3.14)    # x becomes 3 (float to integer conversion)
+    y = int(5.99)    # y becomes 5 (float to integer conversion)
+    ```
+- **Float Precision**: Floats have a finite precision and may not always be exact. This is due to the nature of floating-point representation in computer systems. Therefore, it's important to be aware of potential precision issues when performing calculations with floats.
+    ```
+    a = 0.1 + 0.2
+    print(a)   # Output: 0.30000000000000004 (not exactly 0.3 due to precision limitations)
+    ```
+Floats are commonly used in scientific calculations, financial applications, and anywhere precise decimal values are required. They provide the flexibility to work with numbers that include fractional parts and allow for more precise calculations than integers.
+
+
+
+    
