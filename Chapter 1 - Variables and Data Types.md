@@ -1,3 +1,5 @@
+## Chapter 1 - Variables and Data Types
+
 Variables and data types are fundamental concepts in Python that allow you to store and manipulate different types of values within a program.
 
 **1. Variables**: A variable is a named location in memory that holds a value. It allows you to store and refer to data during program execution. In Python, you can declare a variable by assigning a value to it using the assignment operator (=). 
@@ -19,15 +21,16 @@ Variables in Python have a few important properties:
 
 **2. Data Types**: Python has several built-in data types, which define the nature of the values that can be stored in variables. Here is a table of the different types of variables in Python:
 
-Type | Description
---- | ---
-*Integer* | A whole number, such as 1, 2, or 3.
-*Float* | A number with a decimal point, such as 1.0, 2.5, or 3.14159.
-*String* | A sequence of characters, such as "Hello, world!" or "This is a string."
-*List* | A sequence of objects, such as [1, 2, 3, 4, 5].
-*Tuple* | A sequence of objects that is immutable, meaning that it cannot be changed once it is created.
-*Set* | A collection of unique objects.
-*Dictionary* | A mapping of keys to values.
+Serial| Type | Shortform | Description|
+--- |--- | ---| ---|
+1 |**Integer** |int         | A whole number, such as 1, 2, or 3.
+2 |**Float** |float         | A number with a decimal point, such as 1.0, 2.5, or 3.14159.
+3 |**String**|str           | A sequence of characters, enclosed in single quotes (' ') or double quotes (" "), such as "Hello, world!" or "This is a string."
+4 |**List**|list            | A sequence of objects or An ordered collection of elements, which can be of different types. Lists are mutable, meaning their values can be   changed.such as [1, 2, 3, 4, 5].
+5 |**Tuple**|tuple          | Similar to lists, a sequence of objects that is immutable, meaning that it cannot be changed once it is created.
+6 |**Set**|set              | An unordered collection of unique elements. Sets do not allow duplicate values.
+7 |**Dictionary**|dict      | A collection of key-value pairs, where each value is associated with a unique key.
+8 | **Boolean**|bool        | Represents the truth values True and False, often used in logical operations and conditional statements.
 
 
 
