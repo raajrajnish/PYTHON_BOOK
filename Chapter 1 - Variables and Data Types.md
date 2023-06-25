@@ -9,9 +9,28 @@ x = 179
 name = "Hi i am learning python to get started in ML"
 ```
 
-**2. Data Types**: Python has several built-in data types, which define the nature of the values that can be stored in variables. 
+In this example, the variable name is assigned the value of the string "John Doe". The value of the variable can be changed later in the program, but the name of the variable cannot be changed.
 
-Common data types include:
+Variables in Python have a few important properties:
+
+  - **Names**: Variable names must start with a letter or underscore, and they can only contain letters, numbers, and underscores.
+  - **Scope**: The scope of a variable is the part of the program where the variable is visible. Variables that are defined in the global scope are visible   throughout the entire program, while variables that are defined in a function scope are only visible within the function.
+  - **Type**: Variables can hold different types of values, such as integers, floats, strings, lists, and dictionaries. The type of a variable is determined by the value that is assigned to it.
+
+**2. Data Types**: Python has several built-in data types, which define the nature of the values that can be stored in variables. Here is a table of the different types of variables in Python:
+
+Type | Description
+--- | ---
+*Integer* | A whole number, such as 1, 2, or 3.
+*Float* | A number with a decimal point, such as 1.0, 2.5, or 3.14159.
+*String* | A sequence of characters, such as "Hello, world!" or "This is a string."
+*List* | A sequence of objects, such as [1, 2, 3, 4, 5].
+*Tuple* | A sequence of objects that is immutable, meaning that it cannot be changed once it is created.
+*Set* | A collection of unique objects.
+*Dictionary* | A mapping of keys to values.
+
+
+
 
 1. **Numeric types**: Integers (int), floating-point numbers (float), and complex numbers (complex).
 2. **Strings (str)**: A sequence of characters enclosed in single quotes (' ') or double quotes (" ").
