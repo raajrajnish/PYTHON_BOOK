@@ -285,28 +285,29 @@ In Python, a set is an unordered collection of unique elements. Sets are used to
     ```
 - **Set Operations**: Sets support various operations like union, intersection, and difference.
     - **Uniom**: Combines elements from two sets into a new set using the union() method or the | operator.
-        ```
+      ```
         set1 = {1, 2, 3}
         set2 = {3, 4, 5}
         union_set = set1.union(set2)
         print(union_set)  # Output: {1, 2, 3, 4, 5}
-        ```
+      ```
         
   - **Intersection**: Retrieves common elements between two sets using the intersection() method or the & operator.
-        ```
+    ```
         set1 = {1, 2, 3}
         set2 = {3, 4, 5}
         intersection_set = set1.intersection(set2)
         print(intersection_set)  # Output: {3}
-        ```
+    ```
     
   - **Difference**: Retrieves elements present in one set but not in the other using the difference() method or the - operator. 
-        ```
+
+    ```
         set1 = {1, 2, 3}
         set2 = {3, 4, 5}
         difference_set = set1.difference(set2)
         print(difference_set)  # Output: {1, 2}
-        ```
+    ```
 - **Set Membership**: You can check if an element is present in a set using the in keyword.
     ```
     if 'apple' in fruits:
