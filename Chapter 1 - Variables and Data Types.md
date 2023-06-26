@@ -319,3 +319,51 @@ In Python, a set is an unordered collection of unique elements. Sets are used to
     print(len(fruits))  # Output: 2
     ```
 Sets are useful when you want to work with unique elements and perform operations based on set theory. They provide efficient methods for manipulating and comparing sets of data in Python.
+
+**Section 7 Dictionary**
+
+In Python, a dictionary is a data structure that allows you to store and retrieve data in key-value pairs. Dictionaries are mutable and unordered, meaning that the elements are not stored in a specific order. Each element in a dictionary is accessed by its key rather than an index.
+
+- **Creating a Dictionary**: To create a dictionary, enclose key-value pairs within curly braces {} and separate them with colons (:).
+    ```
+    student = {'name': 'John', 'age': 25, 'country': 'USA'}
+    ```
+- **Accessing Dictionary Elements**: You can access individual elements of a dictionary by specifying their corresponding key. 
+    ```
+    print(student['name'])  # Output: 'John'
+    print(student['age'])   # Output: 25
+    ```
+- **Modifying Dictionary Elements**: Dictionaries are mutable, so you can modify the value of an existing key or add new key-value pairs. 
+    ```
+    student['age'] = 26
+    student['grade'] = 'A'
+    print(student)  # Output: {'name': 'John', 'age': 26, 'country': 'USA', 'grade': 'A'}
+    ```
+- **Removing Dictionary Elements**: You can remove elements from a dictionary using the del keyword or the pop() method.
+    ```
+    del student['country']
+    print(student)  # Output: {'name': 'John', 'age': 26, 'grade': 'A'}
+    
+    removed_value = student.pop('age')
+    print(removed_value)  # Output: 26
+    print(student)        # Output: {'name': 'John', 'grade': 'A'}
+    ```
+- **Dictionary Length**: You can determine the number of key-value pairs in a dictionary using the len() function. 
+    ```
+    print(len(student))  # Output: 2
+    ```
+- **Dictionary Keys and Values**:You can retrieve all the keys or values from a dictionary using the keys() and values() methods, respectively. 
+    ```
+    keys = student.keys()
+    values = student.values()
+    print(keys)   # Output: ['name', 'grade']
+    print(values) # Output: ['John', 'A']
+    ```
+- **Checking Key Existence**:You can check if a key exists in a dictionary using the in keyword. 
+    ```
+    if 'name' in student:
+    print("Name exists in the dictionary")
+    ```
+Dictionaries are versatile and commonly used for mapping data with meaningful associations. They provide a convenient way to store and access data using descriptive keys rather than numeric indices, making them suitable for various applications in Python.
+
+    
