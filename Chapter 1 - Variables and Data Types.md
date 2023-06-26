@@ -366,4 +366,53 @@ In Python, a dictionary is a data structure that allows you to store and retriev
     ```
 Dictionaries are versatile and commonly used for mapping data with meaningful associations. They provide a convenient way to store and access data using descriptive keys rather than numeric indices, making them suitable for various applications in Python.
 
+**Section 8 Boolean**
+
+In Python, a boolean is a data type that represents one of two possible values: True or False. Booleans are used to perform logical operations and make decisions based on the evaluation of conditions.
+
+- **Boolean Values**: The boolean values in Python are True and False. They are case-sensitive, so make sure to capitalize the first letter.
+    ```
+    is_active = True
+    is_registered = False
+    ```
+- **Boolean Operations**: Booleans can be combined and manipulated using logical operators such as and, or, and not. These operators allow you to perform logical operations on boolean values.
+    ```
+    a = True
+    b = False
     
+    print(a and b)   # Output: False
+    print(a or b)    # Output: True
+    print(not a)     # Output: False
+    ```
+- **Comparison Operators**: Comparison operators such as == (equal to), != (not equal to), < (less than), > (greater than), <= (less than or equal to), and >= (greater than or equal to) return boolean values based on the comparison result.
+    ```
+    x = 5
+    y = 10
+    
+    print(x == y)    # Output: False
+    print(x < y)     # Output: True
+    print(x >= y)    # Output: False
+    ```
+- **Boolean Functions and Methods**: Python provides built-in functions and methods to work with booleans.
+    ```
+    # Built-in functions
+    print(bool(0))           # Output: False
+    print(bool(10))          # Output: True
+    print(bool("Hello"))     # Output: True
+    print(bool(""))          # Output: False
+    
+    # Methods
+    fruits = ["apple", "banana", "orange"]
+    print(fruits.__contains__("apple"))     # Output: True
+    print(fruits.__contains__("grape"))     # Output: False
+    ```
+- **Boolean Conditions**: Booleans are commonly used in conditional statements, such as if statements, to control the flow of the program based on the evaluation of conditions.
+    ```
+    is_raining = True
+
+    if is_raining:
+        print("Remember to take an umbrella.")
+    else:
+        print("Enjoy the sunshine!")
+    ```
+Booleans are fundamental for making decisions and performing logical operations in Python. They are essential in control structures, conditionals, and expressing true/false conditions in various programming scenarios.
