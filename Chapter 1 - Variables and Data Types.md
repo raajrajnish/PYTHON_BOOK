@@ -261,3 +261,60 @@ In Python, a tuple is a data structure similar to a list but with one key differ
     print(y_coord)  # Output: 20
     ```
 Tuples provide a convenient way to store related data that should not be modified. They are commonly used in scenarios where data integrity and immutability are desired, such as when passing data between functions or representing fixed sets of values.
+
+**Section 6 Set**
+
+In Python, a set is an unordered collection of unique elements. Sets are used to store distinct items and perform operations like union, intersection, and difference efficiently. Sets are defined using curly braces {} or the set() constructor.
+
+- **Creating a Set**: To create a set, enclose comma-separated values within curly braces {}. 
+    ```
+    fruits = {'apple', 'banana', 'orange'}
+    ```
+- **Adding Elements to a Set**: You can add elements to a set using the add() method.
+    ```
+    fruits.add('mango')
+    print(fruits)  # Output: {'apple', 'banana', 'orange', 'mango'}
+    ```
+- **Removing Elements from a Set**: You can remove elements from a set using methods like remove() or discard(). 
+    ```
+    fruits.remove('banana')
+    print(fruits)  # Output: {'apple', 'orange'}
+    
+    fruits.discard('grape')
+    print(fruits)  # Output: {'apple', 'orange'}
+    ```
+- **Set Operations**: Sets support various operations like union, intersection, and difference.
+    - **Uniom**: Combines elements from two sets into a new set using the union() method or the | operator.
+        ```
+        set1 = {1, 2, 3}
+        set2 = {3, 4, 5}
+        union_set = set1.union(set2)
+        print(union_set)  # Output: {1, 2, 3, 4, 5}
+        ```
+        
+  - **Intersection**: Retrieves common elements between two sets using the intersection() method or the & operator.
+        ```
+        set1 = {1, 2, 3}
+        set2 = {3, 4, 5}
+        intersection_set = set1.intersection(set2)
+        print(intersection_set)  # Output: {3}
+        ```
+    
+  - **Difference**: Retrieves elements present in one set but not in the other using the difference() method or the - operator. 
+        ```
+        set1 = {1, 2, 3}
+        set2 = {3, 4, 5}
+        difference_set = set1.difference(set2)
+        print(difference_set)  # Output: {1, 2}
+        ```
+- **Set Membership**: You can check if an element is present in a set using the in keyword.
+    ```
+    if 'apple' in fruits:
+      print("Apple is in the set")
+    ```
+    
+- **Set Length**: You can determine the number of elements in a set using the len() function.
+    ```
+    print(len(fruits))  # Output: 2
+    ```
+Sets are useful when you want to work with unique elements and perform operations based on set theory. They provide efficient methods for manipulating and comparing sets of data in Python.
