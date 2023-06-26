@@ -214,4 +214,50 @@ Strings are widely used in Python for representing text-based data, working with
     ```
 Lists are incredibly versatile and offer various built-in methods for sorting, searching, and manipulating elements. By using lists, you can efficiently store and work with collections of data in Python.
 
+**Section 5 Tuple**
 
+In Python, a tuple is a data structure similar to a list but with one key difference: tuples are immutable, meaning they cannot be modified once created. Tuples are often used to store related pieces of information together and provide a way to ensure the integrity of the data. Tuples are defined using parentheses ().
+
+- **Creating a Tuple**: To create a tuple, enclose comma-separated values within parentheses ().
+    ```
+     person = ('John', 25, 'USA')
+    ```
+- **Accessing Tuple Elements**: You can access individual elements of a tuple using indexing, just like with lists. The indexing starts from 0.
+    ```
+     print(person[0])  # Output: 'John'
+     print(person[1])  # Output: 25
+    ```
+- **Tuple Unpacking**: You can assign tuple elements to separate variables using tuple unpacking. This allows you to conveniently access individual elements without using indexing.
+    ```
+     name, age, country = person
+     print(name)     # Output: 'John'
+     print(age)      # Output: 25
+     print(country)  # Output: 'USA'
+    ```
+- **Immutable Nature**: Unlike lists, tuples are immutable. Once created, you cannot modify the elements of a tuple. 
+    ```
+    person[1] = 30  # Error: Tuples are immutable
+    ```
+- **Tuple Length**: You can determine the length (number of elements) in a tuple using the len() function. 
+    ```
+    print(len(person))  # Output: 3
+    ```
+- **Combining Tuples**: You can combine tuples using the concatenation operator (+) to create a new tuple. 
+    ```
+    tuple1 = (1, 2, 3)
+    tuple2 = ('a', 'b', 'c')
+    combined_tuple = tuple1 + tuple2
+    print(combined_tuple)  # Output: (1, 2, 3, 'a', 'b', 'c')
+    ```
+- **Tuple as Return Values**: Tuples are commonly used to return multiple values from a function.
+    ```
+    def get_coordinates():
+    x = 10
+    y = 20
+    return x, y
+
+    x_coord, y_coord = get_coordinates()
+    print(x_coord)  # Output: 10
+    print(y_coord)  # Output: 20
+    ```
+Tuples provide a convenient way to store related data that should not be modified. They are commonly used in scenarios where data integrity and immutability are desired, such as when passing data between functions or representing fixed sets of values.
