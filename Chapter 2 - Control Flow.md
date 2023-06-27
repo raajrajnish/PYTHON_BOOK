@@ -64,7 +64,8 @@ Control flow is the order in which the statements in a Python program are execut
 
     Example 1
     ```
-    In the below example, the program prints the value of count and increments it by 1 in each iteration until count reaches 5.
+    In the below example, the program prints the value of count and increments it by 1 in each iteration
+    until count reaches 5.
     
     count = 0
     
@@ -74,7 +75,8 @@ Control flow is the order in which the statements in a Python program are execut
     ```
     Example 2
     ```
-    In the below example,  the following code will print the numbers from 1 to 10, but will stop if the number variable is equal to 5.
+    In the below example,  the following code will print the numbers from 1 to 10, but will stop if the number
+    variable is equal to 5.
     
     count = 0
     
