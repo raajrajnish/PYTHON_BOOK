@@ -87,24 +87,24 @@ Control flow is the order in which the statements in a Python program are execut
 
 - **Break and Continue Statements**: In the below example, the program iterates over the list of numbers. If the current number is equal to 3, the loop is terminated using the break statement. If the number is even, the continue statement skips the current iteration. Only odd numbers (1 and 5) are printed.
 
-```
-numbers = [1, 2, 3, 4, 5, 6]
-
-for num in numbers:
-    if num == 3:
-        break
-    if num % 2 == 0:
-        continue
-    print(num)
-```
+    ```
+    numbers = [1, 2, 3, 4, 5, 6]
+    
+    for num in numbers:
+        if num == 3:
+            break
+        if num % 2 == 0:
+            continue
+        print(num)
+    ```
 - **Function Calls**:In the below example, a function called greet is defined. It takes a parameter name and prints a personalized greeting. The function is then called with the argument "Alice", resulting in the output "Hello, Alice!".
 
-```
-def greet(name):
-    print("Hello, " + name + "!")
-
-greet("Alice")
-```
+    ```
+    def greet(name):
+        print("Hello, " + name + "!")
+    
+    greet("Alice")
+    ```
 
 These examples demonstrate different aspects of control flow in Python, including conditional statements, loop structures, and function calls. By utilizing control flow, you can make decisions, repeat actions, and control the overall flow and behavior of your program.
 
