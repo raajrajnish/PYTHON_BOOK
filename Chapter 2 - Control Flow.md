@@ -59,15 +59,30 @@ Control flow is the order in which the statements in a Python program are execut
   ```
 
     
-- **While Loop**: In the below example, the program prints the value of count and increments it by 1 in each iteration until count reaches 5.
+- **While Loop**:
+    - While loops allow you to execute a block of code as long as a certain condition is met.
 
-```
-count = 0
+    Example 1
+    ```
+    In the below example, the program prints the value of count and increments it by 1 in each iteration until count reaches 5.
+    
+    count = 0
+    
+    while count < 5:
+        print(count)
+        count += 1
+    ```
+    Example 2
+    ```
+    In the below example,  the following code will print the numbers from 1 to 10, but will stop if the number variable is equal to 5.
+    
+    count = 0
+    
+    while count < 5:
+        print(count)
+        count += 1
+    ```
 
-while count < 5:
-    print(count)
-    count += 1
-```
 - **Break and Continue Statements**: In the below example, the program iterates over the list of numbers. If the current number is equal to 3, the loop is terminated using the break statement. If the number is even, the continue statement skips the current iteration. Only odd numbers (1 and 5) are printed.
 
 ```
