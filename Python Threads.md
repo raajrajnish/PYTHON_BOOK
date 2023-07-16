@@ -24,42 +24,44 @@ you may want to explore other concurrency models, such as multiprocessing, async
 parallelism.
 
 **Examples**
-Below is a very basic example on how to call thread in python
+
+1. Below is a very basic example on how to call thread in python (old way)
 ```
-"""
-EXAMPLE - How to use threading in python
-"""
 import threading
 import time
 
 # calculating the start time of the program
 start = time.perf_counter()
 
-# function which does something
-def do_something():
-    print('Sleeping for 1 second')
-    time.sleep(1)
+# function which does something by taking a parameter
+def do_something(seconds):
+    print(f'Sleeping for {seconds} second(s)')
+    time.sleep(seconds)
     print('Done sleeping')
 
-# creating 2 threads
-t1 = threading.Thread(target=do_something)
-t2 = threading.Thread(target=do_something)
+# creating and empty list to store threads
+threads = []
 
-# to run the threads
-t1.start()
-t2.start()
+# running a for loop to generate threads
+for _ in range(10):
+    t = threading.Thread(target=do_something, args=[1.5])
+    t.start()
+    threads.append(t)
 
-# make sure both threads finish first before executing next line
-t1.join()
-t2.join()
+# calling join on generated threads - joins make sure all the threads have been executed first before moving to other
+# line of code
+for thread in threads:
+    thread.join()
 
 # calculating time at the end of the program
 finish = time.perf_counter()
 
 # calculating the total time take by the program
 print(f'Finished in {round(finish-start,2)} second(s)')
+```
 
-Finished in 1.02 second(s)
+2. Below is a very basic example on how to call thread in python (new way)
+```
 ```
 
 
