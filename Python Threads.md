@@ -1,5 +1,13 @@
 # Python Threads
 
+In multithreading, the concept of threads is used. Let us first understand the concept of thread in computer architecture.
+
+# What is a Process in Python?
+A thread is an entity within a process that can be scheduled for execution. For simplicity, you can assume that a thread is simply a subset of a process!
+Multithreading is defined as the ability of a processor to execute multiple threads concurrently.
+
+======================
+
 Threading in Python refers to the concurrent execution of multiple threads within a single program. A thread is a lightweight process that can perform 
 tasks independently, allowing for parallelism and efficient utilization of system resources.
 
