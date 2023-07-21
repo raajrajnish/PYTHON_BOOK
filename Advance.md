@@ -154,9 +154,10 @@ for d in multiply_the_numbers(x):
     print(f'multiplied value is : {d}')
 
 ```
-
-
-
+### Where we can use generators
+    - Scenario where you want tp iterate overa a iterable and condition where previous and next value is not of much importance and you are intrested in only the current value
+    - Scenario where you want to look for a specific condition in a large corpse of text - e.g specific keywords extraction from a huge file
+    
 
 
 
