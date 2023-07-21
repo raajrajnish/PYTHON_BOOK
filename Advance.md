@@ -148,6 +148,11 @@ def multiply_the_numbers(x):
 value = multiply_the_numbers(x)
 print(f'multiplied value is : {next(value)}')
 print(f'multiplied value is : {next(value)}')
+
+# or we can call it like below
+for d in multiply_the_numbers(x):
+    print(f'multiplied value is : {d}')
+
 ```
 
 
