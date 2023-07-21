@@ -154,9 +154,21 @@ for d in multiply_the_numbers(x):
     print(f'multiplied value is : {d}')
 
 ```
+## Generator in comprehension
+```
+# inside the parenthesis you define the logic and hence the output becomes iterator
+x = (i for i in range(10))
+```
+
 ### Where we can use generators
     - Scenario where you want tp iterate overa a iterable and condition where previous and next value is not of much importance and you are intrested in only the current value
     - Scenario where you want to look for a specific condition in a large corpse of text - e.g specific keywords extraction from a huge file
+    ```
+    def read_csv_file(file_name):
+        for line in open(file_name, 'r'):
+            yield line
+    ```
+
     
 
 
