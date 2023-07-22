@@ -1,4 +1,6 @@
 # How python works
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Custom](https://badgen.net/badge/Custom?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 Python code is a high level code when executed gets converted to byte code through intrepreter in runtime line by line into a machine code and this is how the code runs.
 
