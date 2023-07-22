@@ -15,3 +15,8 @@ Type | Description|
 **Non-Public Methods and Instance Variables**| Use one leading underscore only for non-public methods and instance variables.
 **-**| To avoid name clashes with subclasses, use two leading underscores to invoke Python’s name mangling rules.
 **Constants**| Constants are usually defined on a module level and written in all capital letters with underscores separating words. Examples include MAX_OVERFLOW and TOTAL.
+
+## Optional Paramters
+
+## Static Class vs Class Method
+to you class method we do not require to create object or instance of the class we can use it directly using the class namefollowed by period and then class name
