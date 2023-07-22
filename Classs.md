@@ -20,3 +20,6 @@ Type | Description|
 
 ## Static Class vs Class Method
 to you class method we do not require to create object or instance of the class we can use it directly using the class namefollowed by period and then class name
+
+## Map Function
+
