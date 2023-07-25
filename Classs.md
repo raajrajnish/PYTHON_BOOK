@@ -86,4 +86,41 @@ print(result)  # Output: [2, 4, 6, 8, 10]
 
 The filter() function is handy when you want to extract specific elements from a collection based on certain conditions, and it's an effective way to avoid writing explicit loops for filtering operations.
 
+## Lambda Functions
+
+a lambda function is a small anonymous function, also known as an inline or one-liner function. It allows you to create simple functions without needing to use the def keyword, which is typically used to define named functions. Lambda functions are useful for creating quick, short-lived functions that are not required to be defined with a name.
+```
+lambda arguments: expression
+```
+where:
+
+arguments: This is a comma-separated list of input parameters for the lambda function.
+expression: This is a single expression that the lambda function evaluates and returns.
+Here's a simple example of a lambda function that doubles its input:
+```
+double = lambda x: x * 2
+```
+In this example, we define a lambda function that takes a single argument x and returns x * 2, effectively doubling the value of x. You can use this lambda function like any regular function:
+```
+result = double(5)
+print(result)  # Output: 10
+```
+Lambda functions are often used in conjunction with built-in functions like map(), filter(), and sorted(), where a short function is required for a one-time operation.
+
+Example using lambda with map():
+```
+numbers = [1, 2, 3, 4, 5]
+doubled_numbers = map(lambda x: x * 2, numbers)
+result = list(doubled_numbers)
+print(result)  # Output: [2, 4, 6, 8, 10]
+```
+Example using lambda with filter():
+```
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = filter(lambda x: x % 2 == 0, numbers)
+result = list(even_numbers)
+print(result)  # Output: [2, 4, 6, 8, 10]
+```
+
+Lambda functions are handy when you need a simple function for a specific task and don't want to create a named function using def. However, keep in mind that lambda functions are limited in functionality compared to regular functions since they can only consist of a single expression.
 
